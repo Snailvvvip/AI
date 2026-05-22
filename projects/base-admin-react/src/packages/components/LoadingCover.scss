@@ -1,0 +1,11 @@
+.loading-cover {
+  position: absolute;
+  inset: 0;
+  cursor: progress;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px;
+  z-index: 2;
+}

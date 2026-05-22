@@ -1,0 +1,18 @@
+.chat-copilot {
+  .ant-bubble-list {
+    padding: 0 12px !important;
+  }
+
+  .ant-bubble {
+    &[role=interrupt] {
+      .ant-bubble-content {
+        padding: 0;
+      }
+    }
+
+    &[role=assistant] {
+      .ant-bubble-content {
+      }
+    }
+  }
+}

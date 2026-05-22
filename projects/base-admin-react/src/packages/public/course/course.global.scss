@@ -1,0 +1,13 @@
+$web-width: 960px;
+
+@mixin webpage {
+  @media (min-width: $web-width) {
+    @content;
+  }
+}
+
+@mixin mobile {
+  @media (max-width: #{$web-width - 1px}) {
+    @content;
+  }
+}

@@ -1,0 +1,79 @@
+{
+  "name": "ai-resume",
+  "version": "0.1.0",
+  "private": true,
+  "homepage": "/ai-admin-react/",
+  "dependencies": {
+    "@ant-design/x-markdown": "^2.1.1",
+    "@testing-library/dom": "^10.4.0",
+    "@testing-library/jest-dom": "^6.6.3",
+    "@testing-library/react": "^16.3.0",
+    "@testing-library/user-event": "^13.5.0",
+    "@types/jest": "^27.5.2",
+    "@types/node": "^16.18.126",
+    "@types/react": "18",
+    "@types/react-dom": "18",
+    "react": "18",
+    "react-dom": "18",
+    "react-scripts": "5.0.1",
+    "typescript": "^4.9.5",
+    "web-vitals": "^2.1.4"
+  },
+  "scripts": {
+    "dev": "react-scripts start",
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "serve": "ferv ./build -b my-langgraph-front"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ],
+    "rules": {
+      "import/no-anonymous-default-export": "off",
+      "react-hooks/rules-of-hooks": "off"
+    }
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "@ant-design/x": "^1.6.0",
+    "@langchain/core": "0.2",
+    "@peryl/dom-to-pdf": "^0.0.1",
+    "@peryl/react-compose": "^0.0.228",
+    "@peryl/utils": "^0.1.75",
+    "@remirror/pm": "^3.0.1",
+    "@remirror/react": "^3.0.3",
+    "@remirror/react-editors": "^2.0.3",
+    "@remirror/react-ui": "^1.0.3",
+    "@types/lodash": "^4.17.18",
+    "@types/qs": "^6.14.0",
+    "@types/webpack-env": "^1.18.8",
+    "antd": "5.26.1",
+    "antd-style": "^3.7.1",
+    "axios": "^1.10.0",
+    "html2canvas": "^1.4.1",
+    "immer": "^10.1.1",
+    "leader-line-new": "^1.1.9",
+    "lodash": "^4.17.21",
+    "markdown-it": "^14.1.0",
+    "plain-design": "3.0.1",
+    "qs": "^6.14.0",
+    "react-router": "7.6.2",
+    "remirror": "^3.0.3",
+    "sass": "1.32.0"
+  }
+}

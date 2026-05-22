@@ -1,0 +1,49 @@
+.ai-user-prompt-modal {
+  .ai-user-prompt-modal-title {
+    font-size: 20px;
+
+    .resume-icon {
+      margin-right: 8px;
+    }
+  }
+
+  .ai-user-prompt-modal-desc {
+    margin-bottom: 1em;
+  }
+
+  .ai-user-prompt-modal-tag-list {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 1em 0;
+
+    & > div {
+      margin-right: 0.5em;
+      position: relative;
+      margin-bottom: 0.5em;
+      padding: 2px 5px;
+      cursor: pointer;
+      font-size: 12px;
+
+      &:after {
+        content: '';
+        background-color: currentColor;
+        opacity: 0.1;
+        position: absolute;
+        inset: 0;
+        z-index: 1;
+        border-radius: 4px;
+      }
+
+      span {
+        position: relative;
+        z-index: 2;
+      }
+    }
+  }
+
+  .ai-user-prompt-modal-foot {
+    display: flex;
+    justify-content: space-between;
+  }
+}

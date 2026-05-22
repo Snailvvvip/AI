@@ -1,0 +1,131 @@
+.card-list {
+  .card-list-operation {
+    padding: 5px 5px;
+    line-height: 1em;
+    font-size: 14px;
+    color: rgba(0, 0, 0, 0.88);
+
+    .card-list-operation-title {
+      font-size: 0.9em;
+      opacity: 0.6;
+      padding: 10px 0;
+    }
+
+    .card-list-operation-item {
+      padding: 12px 5px;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: all ease 300ms;
+
+      &:hover {
+        background-color: #e6f4ff;
+      }
+
+      & > span:last-child {
+        margin-left: 0.5em;
+      }
+    }
+  }
+
+  .card-list-row {
+
+    display: flex;
+
+    & + .card-list-row {
+      margin-top: 20px;
+    }
+
+    & > .card-list-col {
+      width: calc((100% - 1em * (var(--col) - 1)) / var(--col));
+      border: solid 1px #D8D8D8;
+      border-radius: 4px;
+      padding: 5px;
+      overflow: hidden;
+      aspect-ratio: 3 / 4;
+      position: relative;
+      box-sizing: border-box;
+
+      & + .card-list-col {
+        margin-left: 1em;
+      }
+
+      .ant-image {
+        overflow: hidden;
+        aspect-ratio: 3 / 4;
+      }
+
+      .card-list-cover {
+        position: absolute;
+        inset: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: rgba(0, 0, 0, 0.55);
+        opacity: 0;
+        transition: opacity ease 300ms;
+
+        .card-list-cover-deleter {
+          position: absolute;
+          top: 0.5em;
+          right: 0.5em;
+          width: 32px;
+          height: 32px;
+        }
+
+        & > span {
+          color: white;
+          position: absolute;
+          bottom: 0.5em;
+          border-bottom: solid 1px white;
+          padding-bottom: 2px;
+          font-size: 14px;
+          cursor: pointer;
+        }
+      }
+
+      &:hover {
+        .card-list-cover {
+          opacity: 1;
+        }
+      }
+
+      &[data-checked=true] {
+        border-color: #1677ff;
+
+        .card-list-check-icon {
+          opacity: 1;
+        }
+      }
+    }
+
+    .card-list-check-icon {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      height: 36px;
+      width: 36px;
+      display: flex;
+      align-items: flex-end;
+      justify-content: flex-end;
+      color: white;
+      opacity: 0;
+      transition: all ease 300ms;
+
+      &:before {
+        position: absolute;
+        inset: 0;
+        content: '';
+        background-color: #1677ff;
+        transform: translateX(50%) translateY(50%) rotate(45deg);
+        transform-origin: center;
+        z-index: 1;
+      }
+
+      & > .anticon {
+        z-index: 2;
+        transform: rotate(-4.5deg) translateX(-2px) translateY(-2px);
+        font-size: 12px;
+      }
+    }
+  }
+}
