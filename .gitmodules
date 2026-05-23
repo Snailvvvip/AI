@@ -1,3 +1,6 @@
 [submodule "projects/ai-base-frontend"]
 	path = projects/ai-base-frontend
 	url = https://github.com/Snailvvvip/ai-base-frontend.git
+[submodule "projects/ai-base-backend"]
+	path = projects/ai-base-backend
+	url = https://github.com/Snailvvvip/ai-base-backend.git
