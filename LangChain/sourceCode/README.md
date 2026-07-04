@@ -11,6 +11,7 @@ export OPENAI_API_KEY= ''
 这个开源项目在实现RAG工作流的时候使用到了langChain这个框架
 
 # 消息类型有两套类型
+
 openai的消息，角色
 {"role": "system", "content": msg} 系统是你给ai的人设 这是一个解决什么样问题的AI
 {"role": "user", "content": msg}
@@ -38,7 +39,7 @@ AI对上下文开头和结尾内容比较敏感，对中间内容可能会忽略
 
 type在langchain表示消息的角色
 
-role在调用AI接口的时候表示消息角色
+role在调用AI接口的时候表示消息角色(openAI)
 
 
 
@@ -50,13 +51,13 @@ modelscope download --model sentence-transformers/all-MiniLM-L6-v2  --local_dir 
 
 余弦相似度：看方向，越大越像（0-1）
 
-
 L2距离：    看远近，越小越像（0-∞）
 余弦距离：   是1减相似度，越小越像
 
 
 
 ## 总结
+
 - ChromaDB里检索返回的是距离，这个距离是做了归一化的，范围0到1，越小越相似
 - langchain里有相关性分数，范围是0到1，越大越相似，0是最不相似，1是最相似
 
