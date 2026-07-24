@@ -1,0 +1,3 @@
+{"role": "user", "content": "<workspace>\n当前工作目录：D:\\projects\\AgentHarness\\project\n</workspace>\n\n请调用compact工具进行压缩"}
+{"role": "user", "content": "[已裁剪1条消息]"}
+{"content": "", "role": "assistant", "tool_calls": 
